@@ -291,7 +291,7 @@ public class NetCore : NetProto.Singleton<NetCore>
                     {
                         Array.Reverse(_size);
                     }
-                    state.header = BitConverter.ToUInt16(_size, 0);
+                    state.header = BitConverter.ToUInt32(_size, 0);
                 }
                 else
                 {
